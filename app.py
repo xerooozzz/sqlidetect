@@ -24,12 +24,12 @@ class Scanner:
         self.proxies = proxies
         self.headers = headers
         self.user_agents = (
-            Path(f"{base_dir}/txt/user_agents.txt").read_text().splitlines()
+            Path(f"{base_dir}/user_agents.txt").read_text().splitlines()
         )
         self.sql_errors = (
-            Path(f"{base_dir}/txt/sql_errors.txt").read_text().splitlines()
+            Path(f"{base_dir}/sql_errors.txt").read_text().splitlines()
         )
-        self.payloads = Path(f"{base_dir}/txt/payloads.txt").read_text().splitlines()
+        self.payloads = Path(f"{base_dir}/payloads.txt").read_text().splitlines()
         self.custom_payloads = custom_payloads
         self._lock = threading.Lock()
 
