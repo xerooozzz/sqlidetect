@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from sys import stdin, argv
-from core.cli import cli_opts, extract_headers, print_logo
-from core.app import Scanner
+from cli import cli_opts, extract_headers, print_logo
+from app import Scanner
 
 
 def main():
